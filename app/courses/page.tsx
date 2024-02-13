@@ -1,9 +1,9 @@
 import MaxWidthWrapper from '@/components/layout/max-width-wrapper';
 import React from 'react';
 
-export default function Home() {
+export default function CoursesPage() {
 	return (
-		<main className='min-h-[100svh] w-full overflow-clip'>
+		<main>
 			<MaxWidthWrapper className=''>Home Page</MaxWidthWrapper>
 		</main>
 	);
