@@ -14,10 +14,10 @@ export default function MobileMenu() {
 
 			<div
 				className={`fixed top-0 ${
-					isOpen ? 'left-0' : 'left-[100%]'
+					isOpen ? 'left-0' : 'left-[110%]'
 				} w-screen h-screen backdrop-blur-md bg-slate-500 bg-opacity-50 flex items-center justify-end lg:hidden transition-all duration-500 ease-out`}
 			>
-				<div className='absolute h-screen w-96 rounded-3xl border-2 bg-white flex flex-col'>
+				<div className='absolute h-screen w-[80%] rounded-3xl border-2 bg-white flex flex-col'>
 					<div className='flex flex-col gap-8 items-center pt-2 '>
 						<Link href='/'>
 							<svg
