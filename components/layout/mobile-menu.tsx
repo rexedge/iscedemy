@@ -1,15 +1,24 @@
-import React, { useState } from 'react';
-import MaxWidthWrapper from './max-width-wrapper';
+'use client';
+import { MenuIcon, XIcon } from 'lucide-react';
 import Link from 'next/link';
-import { Button } from '../ui/button';
-import MobileMenu from './mobile-menu';
+import React, { useState } from 'react';
 
-export default function NavBar() {
+export default function MobileMenu() {
+	const [isOpen, setIsOpen] = useState(false);
 	return (
-		<div className=''>
-			<MaxWidthWrapper>
-				<nav className=' flex justify-between items-center'>
-					<div className='flex justify-left items-center gap-12'>
+		<>
+			<MenuIcon
+				onClick={() => setIsOpen(true)}
+				className='lg:hidden'
+			/>
+
+			<div
+				className={`fixed top-0 ${
+					isOpen ? 'left-0' : 'left-[110%]'
+				} w-screen h-screen backdrop-blur-md bg-slate-500 bg-opacity-50 flex items-center justify-end lg:hidden transition-all duration-500 ease-out`}
+			>
+				<div className='absolute h-screen w-[80%] rounded-l-3xl bg-white flex flex-col'>
+					<div className='flex flex-col gap-8 items-center pt-2 '>
 						<Link href='/'>
 							<svg
 								xmlns='http://www.w3.org/2000/svg'
@@ -24,48 +33,45 @@ export default function NavBar() {
 								></path>
 							</svg>
 						</Link>
-						<div className='hidden lg:flex gap-8'>
-							<div>
-								<Link
-									href='/'
-									className=' font-bold text-[15px]'
-								>
-									Home
-								</Link>
-							</div>
-							<div>
-								<Link
-									href='/about'
-									className=' font-bold text-[15px]'
-								>
-									About
-								</Link>
-							</div>
-							<div>
-								<Link
-									href='/courses'
-									className=' font-bold text-[15px]'
-								>
-									Courses
-								</Link>
-							</div>
-							<div>
-								<Link
-									href='/contact'
-									className=' font-bold text-[15px]'
-								>
-									Contact
-								</Link>
-							</div>
+						<div>
+							<Link
+								href='/'
+								className=' font-bold text-[15px]'
+							>
+								Home
+							</Link>
+						</div>
+						<div>
+							<Link
+								href='/about'
+								className=' font-bold text-[15px]'
+							>
+								About
+							</Link>
+						</div>
+						<div>
+							<Link
+								href='/courses'
+								className=' font-bold text-[15px]'
+							>
+								Courses
+							</Link>
+						</div>
+						<div>
+							<Link
+								href='/contact'
+								className=' font-bold text-[15px]'
+							>
+								Contact
+							</Link>
 						</div>
 					</div>
-
-					<Button className='rounded-full h-12 hidden lg:flex'>
-						Speak to admissions
-					</Button>
-					<MobileMenu />
-				</nav>
-			</MaxWidthWrapper>
-		</div>
+				</div>
+				<XIcon
+					className='absolute top-10 right-12'
+					onClick={() => setIsOpen(false)}
+				/>
+			</div>
+		</>
 	);
 }
