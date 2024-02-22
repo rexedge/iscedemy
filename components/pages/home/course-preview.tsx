@@ -3,194 +3,91 @@ import { CardTitle, CardHeader, CardDescription, CardContent, CardFooter, Card }
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import * as Icons from '../../../lib/icons'
+import { COURSE_PREVIEW, OTHER_COURSE_PREVIEW } from '@/lib/consts'
+import Link from 'next/link'
 
 
 export default function CoursePreview() {
   return (
-    <div className=" text-white p-8">
+    <div className=" text-white px-4">
+      <h1 className='text-white font-bold xl:w-96 w-full  xl:text-4xl text-2xl py-2'>{`React, JavaScript, HTML, CSS, and more`}</h1>
+      <p className='text-xl font-normal xl:font-semibold xl:w-1/2 w-full pb-3'>{`Choose between a range of beginner-friendly learning paths, hand-crafted by learning experts and backed by research`}</p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <Card className="hover:text-background  bg-background hover:bg-primary/70 hover:scale-105  transition-all">
-          <CardHeader>
-            <div className="flex items-center mb-3 w-5 h-5 space-x-2 text-tertiary">
-              <div className='h-5 w-5'>
-                <Icons.LaptopIcon />
+        {COURSE_PREVIEW.map((course, i) => (
+          <Card key={i} className="hover:text-background items-start justify-center mx-auto bg-background hover:bg-primary/70 hover:scale-105  transition-all">
+            <CardHeader>
+              <div className="flex items-center mb-3 w-5 h-5 space-x-2 text-tertiary">
+                {course.icon?.map((singleicon, i) => (
+                  <div className='h-5 w-5' key={i}>
+                    {singleicon}
+                  </div>
+                ))}
               </div>
-              <div className='h-5 w-5'>
-                <Icons.DatabaseIcon />
+              <Badge className=" py-4  w-full" variant="secondary">{course.name}</Badge>
+              <CardTitle className="mt-2 ">{course.title}</CardTitle>
+            </CardHeader>
+            <CardContent className='py-2'>
+              <CardDescription>
+                {course.info}
+              </CardDescription>
+            </CardContent>
+            <CardFooter className="flex justify-between mt-4">
+              <Button variant="secondary"><Link href='/course'>{`Start Learning`}</Link></Button>
+              <div className="h-5 w-5 text-tertiary">
+                <Link href='/course'>
+                  <Icons.ArrowRightIcon />
+                </Link>
               </div>
-              <div className='h-5 w-5'>
-                <Icons.CogIcon />
-              </div>
-              <div className='h-5 w-5'>
-                <Icons.PaintbrushIcon />
-              </div>
-            </div>
-            <Badge className=" py-4" variant="secondary">
-              {`CAREER PATH`}
-            </Badge>
-            <CardTitle className="mt-2">Full-stack Development</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <CardDescription className=''>
-              {`Discover the core of both front-end and back-end development. Learn to create user interfaces and master
-              key programming languages and frameworks driving today's web.`}
-            </CardDescription>
-          </CardContent>
-          <CardFooter className="flex justify-between mt-4">
-            <Button variant="secondary">Start Learning</Button>
-            <div className="h-5 w-5 text-tertiary">
-            <Icons.ArrowRightIcon />
-            </div>
-            
-          </CardFooter>
-        </Card>
-
-        <Card className="hover:text-background  bg-background hover:bg-primary/70 hover:scale-105  transition-all duration-500">
-          <CardHeader>
-            <div className="flex mb-3 items-center space-x-2 text-tertiary">
-            <div className='h-5 w-5'>
-            <Icons.LaptopIcon />
-            </div>
-              
-              <div className='h-5 w-5'>
-              <Icons.Heading5Icon />
-              </div>
-             
-              <div className='h-5 w-5'>
-              <Icons.CatIcon />
-              </div>
-             
-              <div className='h-5 w-5'>
-              <Icons.SquareIcon />
-              </div>
-              
-            </div>
-            <Badge className="py-4" variant="secondary">
-              CAREER PATH
-            </Badge>
-            <CardTitle className="mt-2">Front-end Development</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <CardDescription className=''>
-              Dive into front-end development using HTML, CSS, and JavaScript. Learn to craft web pages and use React to
-              develop engaging user-focused web applications.
-            </CardDescription>
-          </CardContent>
-          <CardFooter className="flex justify-between mt-4">
-            <Button variant="secondary">Start Learning</Button>
-            <div className="h-5 w-5 text-tertiary">
-              <Icons.ArrowRightIcon />
-            </div>
-
-          </CardFooter>
-        </Card>
+            </CardFooter>
+          </Card>
+        ))}
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-8">
-        <Card className="bg-background ">
-          <CardHeader>
-            <div className="h-6 w-6 text-tertiary">
-              <Icons.BookIcon />
-            </div>
+        {OTHER_COURSE_PREVIEW.map((othersignglecourse, i) => (
+          <Card className="bg-background " key={i}>
+            <CardHeader className=' gap-y-3'>
+              <div className="h-6 w-6 text-tertiary">
+                {othersignglecourse.icon}
+              </div>
 
-            <Badge className="py-4" variant="default">
-              COURSE
-            </Badge>
-            <CardTitle className="mt-2">Python</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <CardDescription className='text-primary'>
-              Explore a beginner-friendly, popular programming language that's renowned for its readability and
-              extensive range of applications.
-            </CardDescription>
-          </CardContent>
-          <CardFooter className="flex justify-between mt-4">
-            <Button variant="outline">Start Learning</Button>
-            <div className="h-5 w-5 text-tertiary">
-              <Icons.ArrowRightIcon />
-            </div>
+              <Badge className="py-4" variant="default">
+                {othersignglecourse.name}
+              </Badge>
 
-          </CardFooter>
-        </Card>
-        <Card className="bg-background">
-          <CardHeader>
-            <div className="h-6 w-6 text-tertiary">
-              <Icons.DatabaseIcon />
-            </div>
+              <CardTitle>{othersignglecourse.title}</CardTitle>
+            </CardHeader>
 
-            <Badge className="py-4" variant="default">
-              COURSE
-            </Badge>
-            <CardTitle className="mt-2">SQL</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <CardDescription className='text-primary'>
-              Master SQL, an essential skill in data analysis and management, from creating to querying and manipulating
-              databases.
-              jfytfyttrjyhvufkufuygukyvcyxjjxfch
-            </CardDescription>
-          </CardContent>
-          <CardFooter className="flex justify-between mt-4">
-            <Button variant="outline">Start Learning</Button>
-            <div className="h-5 w-5 text-tertiary">
-              <Icons.ArrowRightIcon />
-            </div>
+            <CardContent>
+              <CardDescription className='text-primary'>
+                {othersignglecourse.info}
+              </CardDescription>
+            </CardContent>
 
-          </CardFooter>
-        </Card>
-
-        <Card className="bg-background">
-          <CardHeader>
-            <div className="h-6 w-6 text-tertiary">
-              <Icons.FileCodeIcon />
-            </div>
-
-            <Badge className="py-4" variant="default">
-              COURSE
-            </Badge>
-            <CardTitle className="mt-2">HTML</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <CardDescription className='text-primary'>
-              Get familiar with the foundational building blocks of web development, understand the structure of web
-              pages, and start building real websites.
-            </CardDescription>
-          </CardContent>
-          <CardFooter className="flex justify-between mt-4">
-            <Button variant="outline">Start Learning</Button>
-            <div className="h-5 w-5 text-tertiary">
-              <Icons.ArrowRightIcon />
-            </div>
-
-          </CardFooter>
-        </Card>
-
-        <Card className="bg-background">
-          <CardHeader>
-            <div className="h-6 w-6 text-tertiary">
-              <Icons.SquareIcon />
-            </div>
-
-            <Badge className="py-4" variant="default">
-              COURSE
-            </Badge>
-            <CardTitle className="mt-2">JavaScript</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <CardDescription className='text-primary'>
-              {`Dive into the world of JavaScript, the programming language to manipulate web page elements, build web
-              applications, and more.`}
-            </CardDescription>
-          </CardContent>
-          <CardFooter className="flex justify-between mt-4">
-            <Button variant="outline">Start Learning</Button>
-            <div className="h-5 w-5 text-tertiary">
-              <Icons.ArrowRightIcon />
-            </div>
-
-          </CardFooter>
-        </Card>
+            <CardFooter className="flex justify-between mt-4">
+              <Button variant="outline">
+                <Link href='/course'>{`Start Learning`}</Link>
+              </Button>
+              <div className="h-5 w-5 text-tertiary">
+                <Link href='/course'>
+                  <Icons.ArrowRightIcon />
+                </Link>
+              </div>
+            </CardFooter>
+          </Card>
+        ))}
       </div>
+
+      <Button className="mx-auto grid max-w-sm py-3 mt-4 animate-bounce duration-1000 delay-9000 ">
+        <Link
+          className="inline-block w-full rounded-lg bg-tertiary/35  px-8 py-2 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-tertiary/100 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+          href="/course"
+        >
+          {`Start A Course`}
+        </Link>
+      </Button>
+
+
     </div>
   )
 }
