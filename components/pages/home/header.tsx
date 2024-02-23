@@ -42,7 +42,7 @@ export default function HomeHeader() {
               alt="Person coding"
               className="rounded-lg"
               height="450"
-              src="/images/jeff.jpg"
+              src="/images/jeff.JPG"
               style={{
                 aspectRatio: "400/400",
                 objectFit: "cover",
