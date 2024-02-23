@@ -10,19 +10,22 @@ info: string;
 }[] = [
     {
         icon: [
-            <Icons.LaptopIcon />, 
-            <Icons.DatabaseIcon />, 
-            <Icons.CogIcon />,
+            <Icons.LaptopIcon key="1" />, 
+            <Icons.NodeJSCourseIcon key="2"/>,
+            <Icons.DatabaseIcon key="3"/>, 
+            <Icons.GitIcon key="4" />,
         ],
         name: 'CAREER PATH',
         title: 'Back-end Development',
-        info: `Discover the core of both front-end and back-end development. Learn to create user interfaces and master
+        info: `Discover the core of back-end development. Learn to create user interfaces and master
         key programming languages and frameworks driving today's web.`,
     },
     {
         icon: [
-            <Icons.LaptopIcon />,
-            <Icons.Heading5Icon />,
+            <Icons.NextJSIcon key="5"/>,
+            <Icons.JavaScriptIcon key="6"/>,
+            <Icons.ReactJSColorIcon key="7"/>,
+            <Icons.Heading5Icon key="8"/>,
         ],
         name: 'CAREER PATH',
         title: 'Front-end Development',
@@ -37,29 +40,28 @@ export const OTHER_COURSE_PREVIEW: {
     info: string;
 }[] = [
     {
-        icon: <Icons.BookIcon/>,
+        icon: <Icons.BookIcon key="9"/>,
         name: 'COURSE',
         title: 'UI/UX',
         info: `Explore a beginner-friendly, popular programming language that's renowned for its readability and
         extensive range of applications.`,
     },
     {
-        icon: <Icons.DatabaseIcon/>,
+        icon: <Icons.DataBaseColorIon key="10"/>,
         name: ' COURSE',
         title: 'CyberSecurity',
         info: `Master SQL, an essential skill in data analysis and management, from creating to querying and manipulating
-        databases.
-        jfytfyttrjyhvufkufuygukyvcyxjjxfch`,
+        databases.`,
     },
     {
-        icon: <Icons.FileCodeIcon/>,
+        icon: <Icons.TrendIcon key="11"/>,
         name: 'COURSE',
         title: 'Digital Marketing',
         info: `Get familiar with the foundational building blocks of web development, understand the structure of web
         pages, and start building real websites.`,
     },
     {
-        icon: <Icons.PaintbrushIcon />,
+        icon: <Icons.PaintbrushIcon key="12"/>,
         name: ' COURSE',
         title: 'Graphic Design',
         info: `Dive into the world of JavaScript, the programming language to manipulate web page elements, build web
@@ -86,7 +88,7 @@ export const TESTIMONIALS : {
         userrole: 'Frontend Developer',
     },
     {
-        image: '/',
+        image: '/images/favour.jpg',
         name: 'Favour S.',
         review: `I highly recommend ISCEDemy to anyone looking to learn Web Development. I promise you will not regret it.`,
         userrole: 'Frontend Developer',
