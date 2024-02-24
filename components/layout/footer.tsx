@@ -18,7 +18,7 @@ export default function Footer() {
 	return (
 		<div>
 			<MaxWidthWrapper>
-				<div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 justify-between'>
+				<div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-7 justify-between'>
 					<div className='w-full flex flex-col gap-4'>
 						<div className='font-bold text-lg'>
 							Download ISCE Stores
@@ -74,7 +74,7 @@ export default function Footer() {
 						</ol>
 					</div>
 
-					<div className='flex flex-col gap-4'>
+					<div className='flex flex-col gap-4 px-9'>
 						<ol className='font-bold text-lg'> Quick Link</ol>
 						<Link href='/about-us'> About Us</Link>
 						<Link href='/about-us'> Terms Of Use</Link>

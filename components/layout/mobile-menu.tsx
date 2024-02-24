@@ -6,11 +6,10 @@ import React, { useState } from 'react';
 export default function MobileMenu() {
 	const [isOpen, setIsOpen] = useState(false);
 	return (
-		<>
+		<>/////////////////////////////////////////////////////////////////////////////////////////////////////////////jm
 			<MenuIcon
 				onClick={() => setIsOpen(true)}
-				className='lg:hidden'
-			/>
+				className='lg:hidden' />
 
 			<div
 				className={`fixed top-0 ${
@@ -42,8 +41,7 @@ export default function MobileMenu() {
 							</Link>
 						</div>
 						<div>
-							<Link
-								href='/about'
+							<Link href='/about'
 								className=' font-bold text-[15px]'
 							>
 								About

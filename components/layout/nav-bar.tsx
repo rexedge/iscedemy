@@ -3,6 +3,8 @@ import MaxWidthWrapper from './max-width-wrapper';
 import Link from 'next/link';
 import { Button } from '../ui/button';
 import MobileMenu from './mobile-menu';
+import Dropdown from './course-dropdown';
+import CoursesList from './course-dropdown';
 
 export default function NavBar() {
 	return (
@@ -33,21 +35,17 @@ export default function NavBar() {
 									Home
 								</Link>
 							</div>
+							
 							<div>
 								<Link
-									href='/about'
+									href='/courses'
 									className=' font-bold text-[15px]'
 								>
 									About
 								</Link>
 							</div>
 							<div>
-								<Link
-									href='/courses'
-									className=' font-bold text-[15px]'
-								>
-									Courses
-								</Link>
+								<CoursesList/>
 							</div>
 							<div>
 								<Link
