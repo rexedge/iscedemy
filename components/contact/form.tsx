@@ -19,8 +19,8 @@ export default function Form() {
         <div className=" w-full text-white lg:relative min-h-screen items-center justify-center">
           <div className="lg:w-3/4 bg-tertiary mx-auto py-16 z-20 flex justify-end">
             <div className=" lg:w-1/2 lg:px-3 lg:flex lg:flex-col justify-end lg:mr-24">
-              <h1 className="text-6xl font-bold">Get in Touch</h1>
-              <p className="text-xl mt-4 mb-12">
+              <h1 className="text-6xl font-bold px-4">Get in Touch</h1>
+              <p className="text-xl px-4 mt-4 mb-12">
                 Feel free to drop us a line below!
               </p>
               <div className="lg:flex lg:flex-wrap lg:justify-end lg:-mx-4">
@@ -52,7 +52,7 @@ export default function Form() {
                         placeholder="Write your message here"
                       />
                     </div>
-                    <Button className="w-1/4">Send message</Button>
+                    <Button className= "lg:w-1/4 ">Send message</Button>
                   </form>
                 </div>
               </div>
