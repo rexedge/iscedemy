@@ -6,7 +6,7 @@ import React, { useState } from 'react';
 export default function MobileMenu() {
 	const [isOpen, setIsOpen] = useState(false);
 	return (
-		<>/////////////////////////////////////////////////////////////////////////////////////////////////////////////jm
+		<>
 			<MenuIcon
 				onClick={() => setIsOpen(true)}
 				className='lg:hidden' />
