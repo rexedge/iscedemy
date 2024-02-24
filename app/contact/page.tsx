@@ -1,10 +1,16 @@
+import Address from '@/components/contact/address';
+import Form from '@/components/contact/form';
 import MaxWidthWrapper from '@/components/layout/max-width-wrapper';
 import React from 'react';
 
 export default function ContactPage() {
 	return (
 		<div>
-			<MaxWidthWrapper className=''>Home Page</MaxWidthWrapper>
+			<MaxWidthWrapper className=''>
+				<div className="">
+					<Form />
+				</div>
+			</MaxWidthWrapper>
 		</div>
 	);
 }
