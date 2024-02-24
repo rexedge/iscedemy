@@ -23,7 +23,7 @@ export default function CoursesPage() {
         <Carousel
           plugins={[
             Autoplay({
-              delay: 2000,
+              delay: 4000,
             }),
           ]}
         >

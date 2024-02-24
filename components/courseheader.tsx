@@ -21,10 +21,12 @@ export default function CourseHeader({
         />
         <div className=" absolute top-0 h-[300px] w-full bg-gradient-to-r from-black to-[#ffffff00] rounded-md ">
           <div className=" relative text-white px-[20px] pt-[60px] ">
-            <h1 className="lg:text-[30px] text-[20px] lg:w-[40%] font-bold ">{header}</h1>
+            <h1 className="lg:text-[30px] text-[20px] lg:w-[40%] font-bold ">
+              {header}
+            </h1>
             <p>{description}</p>
             <Link
-              className="bg-white text-black px-5 py-3 rounded-md "
+              className="bg-white text-black px-5 py-3 rounded-full "
               href={link}
             >
               <button className="mt-[20px]">Get started</button>
