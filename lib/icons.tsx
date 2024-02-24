@@ -15,7 +15,7 @@ export const SearchIcon = (
 	</svg>
 );
 
-export const ArrowRightIcon = (
+export const ArrowRightIcon = () => (
 	<svg
 		width='30'
 		height='30'
