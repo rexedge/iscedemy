@@ -1,4 +1,3 @@
-import Address from '@/components/contact/address';
 import Form from '@/components/contact/form';
 import MaxWidthWrapper from '@/components/layout/max-width-wrapper';
 import React from 'react';
