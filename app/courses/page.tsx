@@ -18,8 +18,8 @@ import CourseList from "@/components/courselist";
 
 export default function CoursesPage() {
   return (
-    <main className="lg:w-[83%] flex flex-col justify-center items-center">
-      <div className="w-full  mt-5">
+    <main className="lg:w-[83%] flex flex-col">
+      <div className="w-full mt-5">
         <Carousel
           plugins={[
             Autoplay({
