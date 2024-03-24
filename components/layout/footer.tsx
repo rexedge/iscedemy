@@ -6,7 +6,7 @@ import {
 	LucideMail,
 	LucideMapPin,
 	LucidePhone,
-	LucideTwitter
+	LucideTwitter,
 } from 'lucide-react';
 import Link from 'next/link';
 import { Button } from '../ui/button';
@@ -16,8 +16,8 @@ export default function Footer() {
 	return (
 		<div className='my-8'>
 			<MaxWidthWrapper>
-				<div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 justify-between'>
-					<div className='w-full flex flex-col gap-4 '>
+				<div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-7 justify-between'>
+					<div className='w-full flex flex-col gap-4'>
 						<div className='font-bold text-lg'>
 							{`Download ISCE Stores`}
 						</div>
@@ -72,12 +72,33 @@ export default function Footer() {
 						</ol>
 					</div>
 
-					<div className='flex flex-col gap-4 mx-8'>
+					<div className='flex flex-col gap-4 px-9'>
 						<ol className='font-bold text-lg'> Quick Link</ol>
-						<Link href='/about-us' className='cursor-pointer'> About Us</Link>
-						<Link href='/about-us' className='cursor-pointer'> Terms Of Use</Link>
-						<Link href='/about-us' className='cursor-pointer'> Privacy & Policy</Link>
-						<Link href='/about-us' className='cursor-pointer'>
+						<Link
+							href='/about-us'
+							className='cursor-pointer'
+						>
+							{' '}
+							About Us
+						</Link>
+						<Link
+							href='/about-us'
+							className='cursor-pointer'
+						>
+							{' '}
+							Terms Of Use
+						</Link>
+						<Link
+							href='/about-us'
+							className='cursor-pointer'
+						>
+							{' '}
+							Privacy & Policy
+						</Link>
+						<Link
+							href='/about-us'
+							className='cursor-pointer'
+						>
 							Frequently Asked Question
 						</Link>
 					</div>
@@ -100,10 +121,18 @@ export default function Footer() {
 				</div>
 				<div className='pt-10 '>
 					<div className='flex items-center gap-4 justify-center py-2'>
-						<Link href='/'><LucideTwitter /></Link>
-						<Link href='/'><LucideFacebook /></Link>
-						<Link href='/'><LucideInstagram /></Link>
-						<Link href='/'><LucideLinkedin /></Link>
+						<Link href='/'>
+							<LucideTwitter />
+						</Link>
+						<Link href='/'>
+							<LucideFacebook />
+						</Link>
+						<Link href='/'>
+							<LucideInstagram />
+						</Link>
+						<Link href='/'>
+							<LucideLinkedin />
+						</Link>
 					</div>
 					<div className='grid justify-center pb-10'>
 						2024 ISCE Stores. All Rights Reserved.
