@@ -1,24 +1,18 @@
-import React from 'react'
-import MaxWidthWrapper from '../../layout/max-width-wrapper'
-import * as Icons from '../../../lib/icons'
-import { Input } from '@/components/ui/input'
-import { Checkbox } from '@/components/ui/checkbox'
-import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
-import { Label } from '@/components/ui/label'
-import Link from 'next/link'
 import Image from 'next/image'
+import * as Icons from '../../../lib/icons'
+import MaxWidthWrapper from '../../layout/max-width-wrapper'
 
 export default function HomeHeader() {
   return (
     <div className="my-10 py-10 text-background w-full items-center justify-center mx-auto">
       <MaxWidthWrapper className='flex flex-col lg:flex-row'>
         <div className="flex flex-col justify-center mx-auto lg:w-1/2">
-          <h1 className="text-3xl font-bold mb-2">{`ISCEDemy`}</h1>
+          <h1 className="text-3xl font-bold mb-2">{`PalmTechNIQ`}</h1>
           <h1 className="text-5xl font-bold mb-6">
             {`Learn to code. Build a portfolio. Get hired.`}
           </h1>
-          <Input className="mb-4" placeholder="Your e-mail" type="email" />
+          {/* <Input className="mb-4" placeholder="Your e-mail" type="email" />
           <Input className="mb-4" placeholder="Your password" type="password" />
           <div className="flex items-center mb-6">
             <Checkbox id="terms" className='border rounded-xl border-background '/>
@@ -33,7 +27,7 @@ export default function HomeHeader() {
               </Link>
             </Label>
           </div>
-          <Button className="bg-secondary hover:bg-primary/70 mb-4 hover:text-secondary text-primary">Sign up and learn for free</Button>
+          <Button className="bg-secondary hover:bg-primary/70 mb-4 hover:text-secondary text-primary">Sign up and learn for free</Button> */}
         </div>
 
         <div className="lg:w-1/2 flex md:space-x-2 justify-center py-3">
@@ -42,7 +36,7 @@ export default function HomeHeader() {
               alt="Person coding"
               className="rounded-lg"
               height="450"
-              src="/images/jeff.JPG"
+              src="/images/man-coding.JPG"
               style={{
                 aspectRatio: "400/400",
                 objectFit: "cover",

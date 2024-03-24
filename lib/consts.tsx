@@ -76,13 +76,13 @@ export const TESTIMONIALS : {
 
 }[] = [
     {
-        image: '/images/jeff.jpg',
+        image: '/images/lekan.jpg',
         name: 'Jeff F.',
         review: `I would not have gotten ready for a web developer position if I hadn't attended the ISCEDemy courses.`,
         userrole: 'Frontend Developer',
     },
     {
-        image: '/images/jeff2.jpg',
+        image: '/images/wuli.jpg',
         name: 'Tobechukwu P.',
         review: `What I gained from the course was the ability to better understand coding and how to work on a project.`,
         userrole: 'Frontend Developer',
