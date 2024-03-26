@@ -1,10 +1,8 @@
-import MaxWidthWrapper from "@/components/layout/max-width-wrapper";
 import Image from "next/image";
-import React from "react";
 
 export default function AboutIsce() {
   return (
-    <MaxWidthWrapper className="text-black grid gap-5">
+    <div className="text-black grid gap-5 h-[100svh]">
       <div className="text-start">
         <div className="text-5xl font-bold ">{``}</div>
       </div>
@@ -24,6 +22,6 @@ export default function AboutIsce() {
           </div>
         </div>
       </div>
-    </MaxWidthWrapper>
+    </div>
   );
 }

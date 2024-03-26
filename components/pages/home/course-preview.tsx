@@ -1,11 +1,9 @@
-import React from 'react'
-import { CardTitle, CardHeader, CardDescription, CardContent, CardFooter, Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
-import * as Icons from '../../../lib/icons'
-import { COURSE_PREVIEW, OTHER_COURSE_PREVIEW } from '@/lib/consts'
-import Link from 'next/link'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { OTHER_COURSE_PREVIEW } from '@/lib/consts'
 import Image from 'next/image'
+import Link from 'next/link'
+import * as Icons from '../../../lib/icons'
 
 
 export default function CoursePreview() {

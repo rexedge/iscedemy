@@ -8,7 +8,7 @@ import React from 'react';
 
 export default function Home() {
 	return (
-		<main className='min-h-[100svh] bg-primary w-full overflow-clip'>
+		<main className='min-h-[100svh] bg-background w-full overflow-clip'>
 			<MaxWidthWrapper >
 			<Image width={50} height={50} src='/assets/ellipse2.png' alt='ellipse-image | ISCEDemy' className='z-20 absolute left-28 animate-ping  duration-1000 delay-1000 top-40  '/>
 			<Image width={50} height={50} src='/assets/ellipse2.png' alt='ellipse-image | ISCEDemy' className='z-20 absolute right-96 duration-1000 delay-500  animate-ping -bottom-36  '/>

@@ -14,7 +14,7 @@ import MaxWidthWrapper from './max-width-wrapper';
 
 export default function Footer() {
 	return (
-		<div className='my-8'>
+		<div className='pt-8 bg-primary text-background'>
 			<MaxWidthWrapper>
 				<div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-7 justify-between'>
 					<div className='w-full flex flex-col gap-4'>
@@ -114,7 +114,7 @@ export default function Footer() {
 								className='px-3 w-full h-full border-none bg-slate-100  text-black rounded-lg placeholder:text-black'
 							/>
 						</div>
-						<Button className='h-12 rounded-2xl'>
+						<Button variant='outline' className='h-12 rounded-2xl bg-background text-primary hover:bg-none'>
 							Subscribe
 						</Button>
 					</div>
@@ -134,7 +134,7 @@ export default function Footer() {
 							<LucideLinkedin />
 						</Link>
 					</div>
-					<div className='grid justify-center pb-10'>
+					<div className='grid justify-center'>
 						2024 ISCE Stores. All Rights Reserved.
 					</div>
 				</div>

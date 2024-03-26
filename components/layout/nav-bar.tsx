@@ -5,7 +5,7 @@ import MobileMenu from './mobile-menu';
 
 export default function NavBar() {
 	return (
-		<div className=''>
+		<div className='bg-primary text-background'>
 			<MaxWidthWrapper>
 				<nav className=' flex justify-between items-center'>
 					<div className='flex justify-left items-center gap-12'>
@@ -60,10 +60,13 @@ export default function NavBar() {
 							</div>
 						</div>
 					</div>
-
-					<Button className='rounded-full h-12 hidden lg:flex'>
+					<Link href='https//wa.me/08163453826'>
+					<Button  variant='outline' className='rounded-full h-12 hidden hover:text-primary hover:bg-none bg-background text-primary  lg:flex'>
+						
 						Speak to admissions
+						
 					</Button>
+					</Link>
 					<MobileMenu />
 				</nav>
 			</MaxWidthWrapper>

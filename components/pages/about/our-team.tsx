@@ -5,21 +5,8 @@ import React from "react";
 
 export default function OurTeam() {
   return (
-    <div id="our-team">
-      <MaxWidthWrapper>
+    <div id="our-team" className="h-[100svh]">
         <div className="">
-          {/* <Tabs
-            defaultValue="account"
-            className="w-full items-center justify-between sticky top-0 "
-          >
-            <TabsList>
-              <TabsTrigger value="account">Our Stroy</TabsTrigger>
-              <TabsTrigger value="password">Our blog</TabsTrigger>
-              <TabsTrigger value="pass">Our team</TabsTrigger>
-              <TabsTrigger value="word">Open positions</TabsTrigger>
-            </TabsList>
-          </Tabs> */}
-
           <div className="grid md:grid-cols-2 gap-16 justify-center py-20">
             <div className="">
               <div className="font-light text-lg w-full rounded-xl overflow-clip">
@@ -42,7 +29,6 @@ export default function OurTeam() {
             </div>
           </div>
         </div>
-      </MaxWidthWrapper>
     </div>
   );
 }

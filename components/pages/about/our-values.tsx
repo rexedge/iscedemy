@@ -1,11 +1,7 @@
-import MaxWidthWrapper from "@/components/layout/max-width-wrapper";
-import Image from "next/image";
-import React from "react";
 
 export default function OurValues() {
   return (
-    <div id="our-values">
-      <MaxWidthWrapper>
+    <div id="our-values" className="h-[100svh]">
         <div className="grid md:grid-cols-2 gap-16 justify-center py-20 ">
           <div className="text-xl  ">
             <div className="text-start pb-10 ">
@@ -35,7 +31,6 @@ export default function OurValues() {
             </div>
           </div>
         </div>
-      </MaxWidthWrapper>
     </div>
   );
 }

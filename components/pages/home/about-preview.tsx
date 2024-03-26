@@ -1,4 +1,5 @@
 import MaxWidthWrapper from '@/components/layout/max-width-wrapper'
+import { Button } from "@/components/ui/button"
 import Link from 'next/link'
 import * as Icons from '../../../lib/icons'
 import React from 'react'
@@ -9,11 +10,11 @@ export default function AboutPreview() {
     <div className="w-full py-6 md:py-12 lg:py-16">
       <MaxWidthWrapper>
         <div className="container grid-in-container px-4 md:px-6">
-          <div className="flex flex-col text-background   justify-center space-y-4 text-center">
+          <div className="flex flex-col text-primary   justify-center space-y-4 text-center">
             <h2 className="text-3xl font-bold tracking-tighter xl:text-4xl underline">{`At PalmTechNIQ`}</h2>
             <div className="space-y-2 flex flex-col-reverse items-center lg:flex-row lg:justify-between w-full">
               <div className="relative w-full lg:w-1/2 px-4">
-                   <p className="w-full text-background text-lg text-center xl:mx-8 py-2 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                   <p className="w-full text-primary text-lg text-center xl:mx-8 py-2 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                   {`We're dedicated to providing the best technical education for our students, preparing them for success in the digital age. Our innovative approach, experienced instructors, and hands-on learning opportunities make our institute the perfect place to launch your career in tech.`}
                 </p>
               </div>
@@ -34,31 +35,32 @@ export default function AboutPreview() {
                   <div className="h-30 w-30 py-3">
                     <Icons.ExpertIcon />
                   </div>
-                  <div className="xl:text-xl lg:text-xl text-md text-background dark:text-gray-400">{`Expert Instructors`}</div>
+                  <div className="xl:text-xl lg:text-xl text-md text-primary dark:text-gray-400">{`Expert Instructors`}</div>
                 </div>
                 <div className="flex flex-col items-center ">
                   <div className="h-30 w-30 py-3">
                     <Icons.Curriculum />
                   </div>
-                  <div className="xl:text-xl lg:text-xl text-md text-background dark:text-gray-400">{`Hands-on Projects`}</div>
+                  <div className="xl:text-xl lg:text-xl text-md text-primary dark:text-gray-400">{`Hands-on Projects`}</div>
                 </div>
                 <div className="flex flex-col items-center ">
                   <div className="h-30 w-30 py-3">
                     <Icons.AwardIcon />
                   </div>
-                  <div className="xl:text-xl lg:text-xl text-md text-background dark:text-gray-400">{`Cutting-edge Curriculum`}</div>
+                  <div className="xl:text-xl lg:text-xl text-md text-primary dark:text-gray-400">{`Cutting-edge Curriculum`}</div>
                 </div>
               </div>
             </div>
             
-            <div className="mx-auto max-w-sm py-3">
+            <Button className="mx-auto grid max-w-sm py-3 mt-4 animate-bounce duration-1000 delay-9000 ">
               <Link
-                className="inline-block w-full bg-white text-black rounded-full px-8 py-2 text-sm font-medium shadow transition-colors hover:bg-tertiary/100 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+                className="inline-block w-full bg-white text-black rounded-full 
+                px-8 py-2 text-sm font-medium  shadow transition-colors hover:bg-tertiary/100 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900"
                 href="/about"
               >
                 {`Learn More`}
               </Link>
-            </div>
+              </Button>
           </div>
         </div>
       </MaxWidthWrapper>
