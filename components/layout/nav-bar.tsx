@@ -1,10 +1,7 @@
-import React, { useState } from 'react';
-import MaxWidthWrapper from './max-width-wrapper';
 import Link from 'next/link';
 import { Button } from '../ui/button';
+import MaxWidthWrapper from './max-width-wrapper';
 import MobileMenu from './mobile-menu';
-import Dropdown from './course-dropdown';
-import CoursesList from './course-dropdown';
 
 export default function NavBar() {
 	return (
@@ -38,14 +35,20 @@ export default function NavBar() {
 							
 							<div>
 								<Link
-									href='/courses'
+									href='/about'
 									className=' font-bold text-[15px]'
 								>
 									About
 								</Link>
 							</div>
 							<div>
-								<CoursesList/>
+							<Link
+									href='/courses'
+									className=' font-bold text-[15px]'
+								>
+									Courses
+								</Link>
+							
 							</div>
 							<div>
 								<Link
