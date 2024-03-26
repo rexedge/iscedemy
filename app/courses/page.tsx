@@ -1,20 +1,12 @@
 "use client";
 import CourseHeader from "@/components/courseheader";
-import { Card, CardContent } from "@/components/ui/card";
+import CourseList from "@/components/courselist";
 import {
   Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
+  CarouselContent
 } from "@/components/ui/carousel";
 import { COURSEHEADER, COURSELIST } from "@/lib/consts";
-import { ArrowRightIcon, SearchIcon } from "@/lib/icons";
-import Link from "next/link";
-import React from "react";
 import Autoplay from "embla-carousel-autoplay";
-import { Key } from "lucide-react";
-import CourseList from "@/components/courselist";
 
 export default function CoursesPage() {
   return (

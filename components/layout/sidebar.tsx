@@ -1,8 +1,8 @@
 "use client";
-import React, { useState } from "react";
-import CourseItem from "../courseitem";
 import { COURSEITEM } from "@/lib/consts";
 import { CircleRightArrow } from "@/lib/icons";
+import { useState } from "react";
+import CourseItem from "../courseitem";
 
 export default function SideBar() {
   const [click, setClicked] = useState("h-0");

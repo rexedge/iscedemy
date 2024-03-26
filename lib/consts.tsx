@@ -135,12 +135,16 @@ export const COURSE_PREVIEW: {
 export const OTHER_COURSE_PREVIEW: {
 	icon?: React.ReactNode;
 	name: string;
+	image?: StaticImport | string;
 	title?: string;
+	link?: string;
 	info: string;
 }[] = [
 	{
 		icon: <Icons.BookIcon key='9' />,
 		name: 'COURSE',
+		link: '/',
+		image:'/images/jeff2.jpg',
 		title: 'UI/UX',
 		info: `Explore a beginner-friendly, popular programming language that's renowned for its readability and
         extensive range of applications.`,
@@ -148,6 +152,8 @@ export const OTHER_COURSE_PREVIEW: {
 	{
 		icon: <Icons.DataBaseColorIon key='10' />,
 		name: ' COURSE',
+		link: '/',
+		image:'/images/wuli.jpg',
 		title: 'CyberSecurity',
 		info: `Master SQL, an essential skill in data analysis and management, from creating to querying and manipulating
         databases.`,
@@ -155,13 +161,17 @@ export const OTHER_COURSE_PREVIEW: {
 	{
 		icon: <Icons.TrendIcon key='11' />,
 		name: 'COURSE',
+		link: '/',
+		image:'/images/lekan.jpg',
 		title: 'Digital Marketing',
-		info: `Get familiar with the foundational building blocks of web development, understand the structure of web
+		info: `Master the building blocks of web development, understand the structure of web
         pages, and start building real websites.`,
 	},
 	{
 		icon: <Icons.PaintbrushIcon key='12' />,
 		name: ' COURSE',
+		link: '/',
+		image:'/images/favour.jpg',
 		title: 'Graphic Design',
 		info: `Dive into the world of JavaScript, the programming language to manipulate web page elements, build web
         applications, and more.`,
@@ -176,7 +186,7 @@ export const TESTIMONIALS: {
 	{
 		image: '/images/jeff.jpg',
 		name: 'Jeff F.',
-		review: `I would not have gotten ready for a web developer position if I hadn't attended the ISCEDemy courses.`,
+		review: `I would not have gotten ready for a web developer position if I hadn't attended the ISCEDemy courses.giugiguigigikjkbbkjb`,
 		userrole: 'Frontend Developer',
 	},
 	{

@@ -53,7 +53,7 @@ export default function AboutPreview() {
             
             <div className="mx-auto max-w-sm py-3">
               <Link
-                className="inline-block w-full rounded-lg bg-tertiary/35  px-8 py-2 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-tertiary/100 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+                className="inline-block w-full bg-white text-black rounded-full px-8 py-2 text-sm font-medium shadow transition-colors hover:bg-tertiary/100 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
                 href="/about"
               >
                 {`Learn More`}

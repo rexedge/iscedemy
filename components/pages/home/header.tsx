@@ -31,12 +31,12 @@ export default function HomeHeader() {
         </div>
 
         <div className="lg:w-1/2 flex md:space-x-2 justify-center py-3">
-          <div className="relative">
+          <div className="relative backdrop-blur-xl">
             <Image
               alt="Person coding"
-              className="rounded-lg"
+              className="rounded-lg "
               height="450"
-              src="/images/man-coding.JPG"
+              src="/images/careerpath1.jpg"
               style={{
                 aspectRatio: "400/400",
                 objectFit: "cover",
