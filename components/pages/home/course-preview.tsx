@@ -1,20 +1,22 @@
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { OTHER_COURSE_PREVIEW } from '@/lib/consts'
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { COURSE_PREVIEW, OTHER_COURSE_PREVIEW } from '@/lib/consts'
 import Image from 'next/image'
 import Link from 'next/link'
 import * as Icons from '../../../lib/icons'
+import { Badge } from "@/components/ui/badge"
 
 
 export default function CoursePreview() {
 	return (
-		<div className=" text-white px-4">
-			<h1 className='text-white font-bold xl:w-96 w-full  xl:text-4xl text-2xl py-2'>{`React, JavaScript, HTML, CSS, and more`}</h1>
+		<div className=" text-primary px-4">
+			<h1 className=' font-bold xl:w-96 w-full  xl:text-4xl text-2xl py-2'>{`React, JavaScript, HTML, CSS, and more`}</h1>
 			<p className='text-xl font-normal xl:font-semibold xl:w-1/2 w-full pb-3'>{`Choose between a range of beginner-friendly learning paths, hand-crafted by learning experts and backed by research`}</p>
-			{/* <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+			<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 				{COURSE_PREVIEW.map((course, i) => (
-					<Card key={i} className="hover:text-background items-start justify-center mx-auto bg-cover bg-center hover:bg-primary/70 hover:scale-105 transition-all bg-[url('/images/wuli.jpg')]"  >
-					<CardHeader>
+					
+					<Card key={i} className={`text-background items-start justify-center mx-auto bg-cover bg-center hover:bg-primary/70 hover:scale-105 transition-all`} style={{ backgroundImage: `url(${course.image})`}}  >
+						<CardHeader>
 						<div className="flex items-center mb-3 w-5 h-5 space-x-2 text-tertiary">
 							{course.icon?.map((singleicon, i) => (
 								<div className='h-5 w-5' key={i}>
@@ -25,8 +27,8 @@ export default function CoursePreview() {
 						<Badge className="py-4 w-full" variant="secondary">{course.name}</Badge>
 						<CardTitle className="mt-2">{course.title}</CardTitle>
 					</CardHeader>
-					<CardContent className='py-2'>
-						<CardDescription>
+					<CardContent className='py-2 '>
+						<CardDescription className="text-background font-normal text-xl ">
 							{course.info}
 						</CardDescription>
 					</CardContent>
@@ -41,7 +43,7 @@ export default function CoursePreview() {
 				</Card>
 				
 				))}
-			</div> */}
+			</div>
 
 			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-8 ">
 				{OTHER_COURSE_PREVIEW.map((othersignglecourse, i) => (

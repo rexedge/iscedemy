@@ -2,8 +2,10 @@ import { ArrowRightIcon } from '@/lib/icons';
 import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
+import { COURSELIST } from '@/lib/consts';
 
 export default function CourseList({
+	icon,
 	image,
 	link,
 	title,
@@ -11,6 +13,13 @@ export default function CourseList({
 }: ICOURSELIST) {
 	return (
 		<div className='p-[10px] rounded-md group shadow-md border'>
+			<div className='flex items-center mb-3 w-5 h-5 space-x-2 text-tertiary'>
+					{icon && icon.map((singleIcon, i) =>(
+						<div className='h-5 w-5' key={i}>
+							{singleIcon}
+						</div>
+					))}
+            </div>
 			<div className='relative'>
 				<Image
 					className=' rounded-md'

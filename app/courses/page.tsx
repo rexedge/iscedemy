@@ -32,15 +32,16 @@ export default function CoursesPage() {
           </CarouselContent>
         </Carousel>
         <div className="grid gap-3 mt-6 mb-6 grid-cols-1 lg:grid-cols-3 md:grid-cols-2">
-          {COURSELIST.map((value, k) => (
+          {COURSELIST.map((value, k) => (        
             <CourseList
               key={k}
+              icon={value.icon}
               image={value.image}
               content={value.content}
               title={value.title}
               link={value.link}
             />
-          ))}
+          ))}         
         </div>
       </div>
     </main>

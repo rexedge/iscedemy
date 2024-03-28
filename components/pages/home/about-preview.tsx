@@ -19,13 +19,15 @@ export default function AboutPreview() {
                 </p>
               </div>
               <div className="p-8 w-full lg:w-1/2 relative">
-                <Image
+                <video src='/images/aboutsectionvideo.mp4' width={500} height={500}  
+                autoPlay loop className='rounded-xl'></video>
+                {/* <Image
                   width={500}
                   height={500}
-                  src='/images/wuli.jpg'
+                  src='/images/Build.png'
                   alt='iscedemy | someone coding'
                   className='rounded-xl'
-                />
+                /> */}
               </div>
             </div>
 
